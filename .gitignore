@@ -1,0 +1,6 @@
+# Артефакты сборки
+*.o
+a.out
+nasm/bin/
+nasm/build/
+c/word_lists

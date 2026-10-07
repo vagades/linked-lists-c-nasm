@@ -19,7 +19,7 @@ TARGET = $(BIN_DIR)/program
 all: $(TARGET)
 
 $(TARGET): $(OBJS) | $(BIN_DIR)
-	$(LD) $(LDFLAGS) $^ $(OBJ_DIR)/macro.c -o $@
+	$(LD) $(LDFLAGS) $^ $(SRC_DIR)/macro.c -o $@
 
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.asm | $(OBJ_DIR)
 	$(ASM) $(ASMFLAGS) -I$(INC_DIR) $< -o $@
